@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <link rel="stylesheet" href="../static/css/lightslider.css">
+    <link rel="stylesheet" href="../static/css/hint.css">
+    <link rel="stylesheet" href="css/simplyCountdown.theme.default.css"/>
+    <link rel="stylesheet" href="../static/css/glider.css">
+    <link rel="stylesheet" href="../static/css/glider.min.css">
+    <title>Descarga Anime Gratis - KawaiiOni</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgb(36, 48, 57) !important;">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html" style="background-color: red; color: white; padding-left: 7px; padding-right: 7px;">KawaiiOni</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown" style="margin-left: -15px;">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 10px; padding-right: 10px; background-color: rgb(34, 34, 34);">
+                            <i class='bx bxs-grid'></i> <span class="span-menu" style="font-size: 16px;">Menú</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(34, 34, 34); border-radius: 0;">
+                            <h6 style="color: white; padding-left: 15px; font-family: 'Raleway', sans-serif; font-weight: bold;">Mangas</h6>
+                            <a class="dropdown-item" href="#">Hentai <span class="badge badge-danger">+18</span></a>
+                            <a class="dropdown-item" href="#">Ecchi <span class="badge badge-danger">explicito</span></a>
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Romance</a>
+                            <a class="dropdown-item" href="#">Comedia</a>
+                            <a class="dropdown-item" href="#">Recuerdos de la vida</a>
+                            <a class="dropdown-item" href="#">Shojo <span class="badge badge-danger">chicas adolecentes</span></a>
+                            <a class="dropdown-item" href="#">Shonen <span class="badge badge-danger">chicos adolecentes</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class='bx bx-plus'></i> Ver catálogo de mangas</a>
+                            <div class="dropdown-divider"></div>
+                            <h6 style="color: white; padding-left: 15px; font-family: 'Raleway', sans-serif; font-weight: bold;">Animes</h6>
+                            <a class="dropdown-item" href="#">Ecchi <span class="badge badge-danger">explicito</span></a>
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Romance</a>
+                            <a class="dropdown-item" href="#">Comedia</a>
+                            <a class="dropdown-item" href="#">Recuerdos de la vida</a>
+                            <a class="dropdown-item" href="#">Shojo <span class="badge badge-danger">chicas adolecentes</span></a>
+                            <a class="dropdown-item" href="#">Shonen <span class="badge badge-danger">chicos adolecentes</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class='bx bx-plus'></i> Ver catálogo de animes</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="d-flex flex-row" style="justify-content: center; gap: 10px; padding-top: 6px !important;">
+                                <a href="#" class="socials"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="#" class="socials"><i class='bx bxl-youtube' ></i></a>
+                                <a href="#" class="socials"><i class='bx bxl-twitch' ></i></a>
+                                <a href="#" class="socials"><i class='bx bxl-twitter' ></i></a>
+                            </div>
+                            <p style="font-size: 13px; color: white; text-align: center;">Todos los derechos reservados. Copyright 2022.</p>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-search" type="submit" id="btn-search"
+                        style="border-radius: 0px; margin-left: -8px; background-color: transparent; color: white;"><i class='bx bx-search'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Volver arriba -->
+    <button class="btn" id="ir-arriba" style="background-color: red; color: white;
+        border-radius: 3px; padding: 10px 14px; font-size: 17px; 
+        display: none; z-index: 1000;
+        position: fixed; bottom: 35px; right: 35px;">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+    <!-- portada scrollY -->
+    <section class="section-banner-index2 fixed-top" id="filter">
+        <div class="banner">
+            <div class="container container-banner">
+                <div class="portada2" id="portada">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div id="cuenta"></div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="header">
+                                <a href="#" class="a-count">
+                                    <p class="mensaje">
+                                        <span class="badge badge-danger span-count" style="background-color: red; padding: 6px 10px;">Tate no Yuusha no Nariagari 2 capítulo 3</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Scroll Sticky (al ahcer scroll que un elemento quede fixed) -->
+    <script>
+        window.addEventListener("scroll", function(){
+            let bannerIndex = document.querySelector(".section-banner-index2");
+            bannerIndex.classList.toggle("sticky", window.scrollY > 0)
+        });
+    </script>
+    <section class="section-x-noticia" style="background-color: rgb(36, 48, 57);">
+        <div class="especiales-ovas">
+            <div class="container container-banner">
+                <br>
+                <div class="row" style="justify-content: center;">
+                    <div class="col-lg-4 col-6 columnas-banner"> 
+                        <div class="card-noticia text-white card-has-bg click-col" style="background-image:url('https://p4.wallpaperbetter.com/wallpaper/402/690/378/tokisaki-kurumi-date-a-live-wallpaper-preview.jpg'); 
+                        background-size: cover; background-position: center center;">
+                            <div class="background-hover" id="filter">
+                                <img class="card-img d-none">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="badge badge-danger mr-1 span-noticia" style="background-color: red;">noticias</span>
+                                            <span class="badge badge-danger span-noticia" style="background-color: red;">Date A Live</span>
+                                        </div>
+                                        <h4 class="card-title mt-0 "><a class="text-white" herf="#">Date A Live: Kurumi Tokisaki insipira esta hermosa figura</a></h4>
+                                        <small class="date-card"><i class="far fa-clock"></i> Abril 17, 2022</small>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="media">
+                                            <img class="mr-2 rounded-circle" src="https://static.vecteezy.com/system/resources/previews/002/993/848/large_2x/cute-peach-fruit-character-walking-with-happy-face-free-vector.jpg" alt="Generic placeholder image" style="max-width:50px">
+                                            <div class="media-body">
+                                                <h6 class="my-0 text-white d-block">Durazniiito</h6>
+                                                <small>Periodista</small>
+                                                <br>
+                                                <a href="#" class="btn btn-danger disabled" style="font-size: 12px; margin-left: -5px; padding: 3px 7px; background-color: red;">Leyendo articulo...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-10 columnas-banner">
+                        <div class="row row-spans">
+                            <div class="d-flex flex-row">
+                                <span class="badge badge-danger mr-1" style="background-color: red;">The Rising of the Shield Hero</span>
+                                <span class="badge badge-danger" style="background-color: red;">盾の勇者の成り上がり</span>
+                            </div>
+                        </div>
+                        <div class="row row-spans mt-1">
+                            <div class="d-flex flex-row">
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Ciencia Ficción</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Comedia</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Escolares</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Harem</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Mecha</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Romance</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="content-x-anime">
+                            <h2 class="title-x-noticia" style="font-family: 'Raleway', sans-serif; color: #fff;">Date A Live: Kurumi Tokisaki insipira esta hermosa figura</h2>
+                            <hr style="background-color: rgb(150, 150, 150);">
+                            <h4 class="title-sinopsis-x-noticia" style="font-family: 'Raleway', sans-serif; color: #fff;">Sinopsis</h4>
+                            <div class="content-sinopsis" style="max-height: 100px; overflow-y: auto;">
+                                <p class="sinopsis-x-noticia" style="font-family: 'Raleway', sans-serif; color: #fff; font-size: 15px;">
+                                    Hace algunos años, un extraño fenómeno denominado "sismo espacial" comenzó a azotar parte de Eurasia, causando la muerte de millones de personas. 
+                                    Estos sismos comenzaron a hacerse más frecuentes, y un día, Shido Itsuka, un estudiante aparentemente normal, se encuentra con una particular chica. 
+                                    Se trata de un espíritu, y es una de las causas que provocan los sismos espaciales.
+                                    Shido descubre gracias a su hermana Kotori que él tiene la capacidad de "sellar" los poderes de los espíritus e impedir que causen más daño a la Tierra y a la humanidad. 
+                                    Pero para hacerlo, él debe hacer que los espíritus se enamoren de él y besarlas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-spans2 mt-3">
+                            <div class="d-flex flex-row">
+                                <span class="badge badge-danger mr-1" style="background-color: grey;"><i class='bx bxs-user'></i> Durazniiito</span>
+                                <span class="badge badge-danger mr-1" style="background-color: grey;"><i class='bx bxs-time' ></i> 17 Abril, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class="section-banner-index">
+        <div class="info-x-noticia">
+            <div class="container container-banner">
+                <br>
+                <div class="row">
+
+                    <div class="col-lg-9 col-12">
+                        <h5 style="font-family: 'Raleway', sans-serif; color: rgb(19, 0, 102); text-align: justify;">
+                            Kyoso, ha realizado en colaboración con la tienda de muñecas establecida desde hace mucho tiempo Yoshitoku, está vestido con un kimono vibrante, 
+                            y los hermosos patrones tradicionales están decorados con oro en todas partes para realzar el lujo.
+                        </h5>
+                        <br>
+                        <h5 style="font-family: 'Raleway', sans-serif; color: rgb(19, 0, 102); text-align: justify;">
+                            <span style="font-weight: bold;">"La cara es vida"</span> tanto para figuras como para muñecas japonesas.
+                        </h5>
+                        <br>
+                        <h5 style="font-family: 'Raleway', sans-serif; color: rgb(19, 0, 102); text-align: justify;">
+                            Las partes claras se utilizan para la piel blanca clara, los labios y las mejillas con un toque de rojo y la característica cola negra gemela.
+                            El hombro blanco que asoma desde el hombro desgastado, sostiene el <span style="font-weight: bold;">"Zaphkiel"</span> (rifle), y sonríe sin piedad, el acto de hechizar la ternura y 
+                            la locura cohabitando, la belleza suprema está oculta.Terminado como un plato.
+                        </h5>
+                        <br>
+                        <h5 style="font-family: 'Raleway', sans-serif; color: rgb(19, 0, 102); text-align: justify;">
+                            Traiga a Kurumi Tokisaki, que viste la tradición japonesa y sonríe cautivadoramente.
+                        </h5>
+                        <br>
+                        <img src="https://livedoor.blogimg.jp/newotacom/imgs/e/f/efbb4b3b-s.jpg" alt="" width="100%">
+                        <br><br>
+                        <img src="https://livedoor.blogimg.jp/newotacom/imgs/6/3/63acfc99-s.jpg" alt="" width="100%">
+                        <br><br>
+                        <img src="https://livedoor.blogimg.jp/newotacom/imgs/2/5/252c1f77-s.jpg" alt="" width="100%">
+                        <br><br><br>
+                        <h5 style="font-family: 'Raleway', sans-serif; color: rgb(19, 0, 102);">
+                            Fuente: <a href="http://otakomu.jp/archives/29048494.html"><span style="font-weight: bold; color: rgb(21, 0, 114);">Otakomu</span></a>
+                        </h5>
+                        <br>
+                    </div>
+
+                    <div class="col-lg-3 col-12 columna-seasons">
+                        <div class="row row-spans">
+                            <div class="col-lg-12 col-6 columnas-banner">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="img-card" style="background: url(https://static.wikia.nocookie.net/date-a-live/images/b/bf/Date_a_Live_%28temporada_1%29.png/revision/latest?cb=20190710043032&path-prefix=es);"></div>
+                                        <p class="title-card" style="width: 100%; text-align: center;">Date A Live</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-6 columnas-banner">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="img-card" style="background: url(https://static.wikia.nocookie.net/date-a-live/images/1/16/Date_a_Live_%28temporada_2%29.png/revision/latest?cb=20190710043109&path-prefix=es);"></div>
+                                        <p class="title-card" style="width: 100%; text-align: center;">Date A Live 2</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-6 columnas-banner">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="img-card" style="background: url(https://somoskudasai.com/wp-content/uploads/2018/12/tumblr_pjvhdc9OJM1rzp45wo1_r1_1280.png);"></div>
+                                        <p class="title-card" style="width: 100%; text-align: center;">Date A Live 3</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-6 columnas-banner">
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="img-card" style="background: url(https://ramenparados.com/wp-content/uploads/2021/03/Date-A-Live-IV.jpg);">
+                                            <span class="badge badge-danger" style="float: right; margin-top: -8px; margin-right: 2px; background-color: rgb(0, 159, 0);">emitiéndose</span>
+                                        </div>
+                                        <p class="title-card" style="width: 100%; text-align: center;">Date A Live 4</p>
+                                    </div>
+                                </a>
+                            </div>                    
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <h4 class="title" style="font-family: 'Raleway', sans-serif; font-weight: bold; margin-top: 20px; text-decoration: underline;">OTRAS NOTICIAS EN KAWAIIONI</h4>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 col-6 columnas-banner"> 
+                        <div class="card-noticia text-white card-has-bg click-col" style="background-image:url('https://p4.wallpaperbetter.com/wallpaper/474/115/687/anime-the-rising-of-the-shield-hero-naofumi-iwatani-wallpaper-preview.jpg'); 
+                        background-size: cover; background-position: center center;">
+                            <div class="background-hover" id="filter">
+                                <img class="card-img d-none">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="badge badge-danger mr-1 span-noticia" style="background-color: red;">noticias</span>
+                                            <span class="badge badge-danger span-noticia" style="background-color: red;">Tate no Yuusha</span>
+                                        </div>
+                                        <h4 class="card-title mt-0 "><a class="text-white" herf="#">Tate no Yuusha no Nariagari 2 celebra su segundo episodio</a></h4>
+                                        <small class="date-card"><i class="far fa-clock"></i> Abril 17, 2022</small>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="media">
+                                            <img class="mr-2 rounded-circle" src="https://static.vecteezy.com/system/resources/previews/002/993/848/large_2x/cute-peach-fruit-character-walking-with-happy-face-free-vector.jpg" alt="Generic placeholder image" style="max-width:50px">
+                                            <div class="media-body">
+                                                <h6 class="my-0 text-white d-block">Durazniiito</h6>
+                                                <small>Periodista</small>
+                                                <br>
+                                                <a href="x-noticia.html" class="btn btn-danger" style="font-size: 12px; margin-left: -5px; padding: 3px 7px; background-color: red;">Ver articulo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 columnas-banner"> 
+                        <div class="card-noticia text-white card-has-bg click-col" style="background-image:url('https://somoskudasai.com/wp-content/uploads/2021/12/portada_spy-x-family-23.jpg'); 
+                        background-size: cover; background-position: center center;">
+                            <div class="background-hover" id="filter">
+                                <img class="card-img d-none">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="badge badge-danger mr-1 span-noticia" style="background-color: red;">noticias</span>
+                                            <span class="badge badge-danger span-noticia" style="background-color: red;">Spy x Family</span>
+                                        </div>
+                                        <h4 class="card-title mt-0 "><a class="text-white" herf="#">Un estreno más que exitoso</a></h4>
+                                        <small class="date-card"><i class="far fa-clock"></i> Abril 17, 2022</small>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="media">
+                                            <img class="mr-2 rounded-circle" src="https://static.vecteezy.com/system/resources/previews/002/993/848/large_2x/cute-peach-fruit-character-walking-with-happy-face-free-vector.jpg" alt="Generic placeholder image" style="max-width:50px">
+                                            <div class="media-body">
+                                                <h6 class="my-0 text-white d-block">Durazniiito</h6>
+                                                <small>Periodista</small>
+                                                <br>
+                                                <a href="#" class="btn btn-danger" style="font-size: 12px; margin-left: -5px; padding: 3px 7px; background-color: red;">Ver articulo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 columnas-banner"> 
+                        <div class="card-noticia text-white card-has-bg click-col" style="background-image:url('https://somoskudasai.com/wp-content/uploads/2021/06/portada_rikei-ga-koi-4.jpg'); 
+                        background-size: cover; background-position: center center;">
+                            <div class="background-hover" id="filter">
+                                <img class="card-img d-none">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="badge badge-danger mr-1 span-noticia" style="background-color: red;">noticias</span>
+                                            <span class="badge badge-danger span-noticia" style="background-color: red;">Spy x Family</span>
+                                        </div>
+                                        <h4 class="card-title mt-0 "><a class="text-white" herf="#">La hermosa Ayame Himuro insipira una figura muy sexy</a></h4>
+                                        <small class="date-card"><i class="far fa-clock"></i> Abril 17, 2022</small>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="media">
+                                            <img class="mr-2 rounded-circle" src="https://static.vecteezy.com/system/resources/previews/002/993/848/large_2x/cute-peach-fruit-character-walking-with-happy-face-free-vector.jpg" alt="Generic placeholder image" style="max-width:50px">
+                                            <div class="media-body">
+                                                <h6 class="my-0 text-white d-block">Durazniiito</h6>
+                                                <small>Periodista</small>
+                                                <br>
+                                                <a href="#" class="btn btn-danger" style="font-size: 12px; margin-left: -5px; padding: 3px 7px; background-color: red;">Ver articulo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 columnas-banner"> 
+                        <div class="card-noticia text-white card-has-bg click-col" style="background-image:url('https://images3.alphacoders.com/994/thumb-1920-994295.png'); 
+                        background-size: cover; background-position: center center;">
+                            <div class="background-hover" id="filter">
+                                <img class="card-img d-none">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="badge badge-danger mr-1 span-noticia" style="background-color: red;">noticias</span>
+                                            <span class="badge badge-danger span-noticia" style="background-color: red;">Seishun Buta Yarou</span>
+                                        </div>
+                                        <h4 class="card-title mt-0 "><a class="text-white" herf="#">¿Nueva temporada de Seishun Buta Yarou?</a></h4>
+                                        <small class="date-card"><i class="far fa-clock"></i> Abril 14, 2022</small>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="media">
+                                            <img class="mr-2 rounded-circle" src="https://static.vecteezy.com/system/resources/previews/002/993/848/large_2x/cute-peach-fruit-character-walking-with-happy-face-free-vector.jpg" alt="Generic placeholder image" style="max-width:50px">
+                                            <div class="media-body">
+                                                <h6 class="my-0 text-white d-block">Durazniiito</h6>
+                                                <small>Periodista</small>
+                                                <br>
+                                                <a href="#" class="btn btn-danger" style="font-size: 12px; margin-left: -5px; padding: 3px 7px; background-color: red;">Ver articulo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 columnas-banner"> 
+                        <div class="card-noticia text-white card-has-bg click-col" style="background-image:url('https://images.hdqwalls.com/download/4k-zero-two-darling-in-the-franxx-w4-1280x2120.jpg'); 
+                        background-size: cover; background-position: center center;">
+                            <div class="background-hover" id="filter">
+                                <img class="card-img d-none">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="badge badge-danger mr-1 span-noticia" style="background-color: red;">noticias</span>
+                                            <span class="badge badge-danger span-noticia" style="background-color: red;">Darling in the FranXX</span>
+                                        </div>
+                                        <h4 class="card-title mt-0 "><a class="text-white" herf="#">Darling in the FranXX prepara un nuevo proyecto</a></h4>
+                                        <small class="date-card"><i class="far fa-clock"></i> Abril 15, 2022</small>
+                                    </div>
+                                    <div class="card-footer" style="margin: 0;">
+                                        <div class="media">
+                                            <img class="mr-2 rounded-circle" src="https://static.vecteezy.com/system/resources/previews/002/993/848/large_2x/cute-peach-fruit-character-walking-with-happy-face-free-vector.jpg" alt="Generic placeholder image" style="max-width:50px">
+                                            <div class="media-body">
+                                                <h6 class="my-0 text-white d-block">Durazniiito</h6>
+                                                <small>Periodista</small>
+                                                <br>
+                                                <a href="#" class="btn btn-danger" style="font-size: 12px; margin-left: -5px; padding: 3px 7px; background-color: red;">Ver articulo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 columnas-banner"> 
+                        <div class="card-noticia text-white card-has-bg click-col" style="background-image:url('https://external-preview.redd.it/wDdh6kbvAoGTw9wymJkylk4pYHwYFt0m38QDKrfHWHs.jpg?width=640&crop=smart&auto=webp&s=d5effb10df48f351bfb1a18edb2a527b46a35396'); 
+                        background-size: cover; background-position: center center;">
+                            <div class="background-hover" id="filter">
+                                <img class="card-img d-none">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <span class="badge badge-danger mr-1 span-noticia" style="background-color: red;">noticias</span>
+                                            <span class="badge badge-danger span-noticia" style="background-color: red;">Shikimori-san</span>
+                                        </div>
+                                        <h4 class="card-title mt-0 "><a class="text-white" herf="#">"Una adaptación muy desiquilibrada" Así lo anuncian los fans</a></h4>
+                                        <small class="date-card"><i class="far fa-clock"></i> Abril 15, 2022</small>
+                                    </div>
+                                    <div class="card-footer" style="margin: 0;">
+                                        <div class="media">
+                                            <img class="mr-2 rounded-circle" src="https://static.vecteezy.com/system/resources/previews/002/993/848/large_2x/cute-peach-fruit-character-walking-with-happy-face-free-vector.jpg" alt="Generic placeholder image" style="max-width:50px">
+                                            <div class="media-body">
+                                                <h6 class="my-0 text-white d-block">Durazniiito</h6>
+                                                <small>Periodista</small>
+                                                <br>
+                                                <a href="#" class="btn btn-danger" style="font-size: 12px; margin-left: -5px; padding: 3px 7px; background-color: red;">Ver articulo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4 class="title" style="font-family: 'Raleway', sans-serif; font-weight: bold; margin-top: 20px; text-decoration: underline;"><i class='bx bxs-comment-detail'></i> COMENTARIOS</h4>
+                <!-- Disqus -->
+                <div class="row">
+                    <div class="col-lg-12 col-12 columnas-banner">
+                        <div class="animes_nuevos_contenedor" style="padding: 2px;">
+                            <div class="bg-light" style="border-radius: 0px 0px 10px 10px; box-shadow: 1px 0px 15px rgb(189, 189, 189);">
+                                <div class="m-4 py-2" id="disqus_thread"></div>
+                                <div class="m-4 py-2" id="disqus_thread"></div>
+                            </div>
+
+                            <div id="disqus_thread"></div>
+                            <script>
+                                /**
+                                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                                /*
+                                var disqus_config = function () {
+                                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                };
+                                */
+                                (function() { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://kawaiioni.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the 
+                                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                            </noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container text-center">
+                <span class="badge badge-danger" style="background-color: red; font-size: 15px; padding: 5px 15px;">KAWAIIONI</span>
+                <div class="d-flex flex-row" style="justify-content: center;">
+                    <a href="https://www.instagram.com/" class="btn-red-social hint--bottom hint--error" data-hint="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.youtube.com/" class="btn-red-social hint--bottom hint--error" data-hint="YouTube"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.twitch.com/" class="btn-red-social hint--bottom hint--error" data-hint="Twitch"><i class='bx bxl-twitch' ></i></a>
+                    <a href="https://www.twitter.com/" class="btn-red-social hint--bottom hint--error" data-hint="Twitter"><i class='bx bxl-twitter' ></i></a>
+                </div>
+                <p style="font-size: 13px; color: rgb(195, 195, 195); text-align: center;">Todos los derechos reservados. Copyright 2022.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../static/js/lightslider.js"></script>
+    <script src="../static/js/simplyCountdown.min.js"></script>
+    <script src="../static/js/countdown.js"></script>
+    <script src="../static/js/glider.min.js"></script>
+
+    <!-- init AOS Animations -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- carousel responsive 2 -->
+    <script>
+        new Glider(document.querySelector('.glider'), {
+        slidesToScroll: 2,
+        slidesToShow: 4.3,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        },
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                duration: 3
+            }
+            },{
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                duration: 3
+                }
+            },
+            {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                duration: 3
+                }
+            },{
+            breakpoint: 304,
+            settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1,
+                duration: 3
+                }
+            }
+        ]
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 600);
+            });
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 0){
+                    $('#ir-arriba').slideDown();
+                }else{
+                    $('#ir-arriba').slideUp();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

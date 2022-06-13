@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <link rel="stylesheet" href="../static/css/lightslider.css">
+    <link rel="stylesheet" href="../static/css/hint.css">
+    <link rel="stylesheet" href="css/simplyCountdown.theme.default.css"/>
+    <link rel="stylesheet" href="../static/css/glider.css">
+    <link rel="stylesheet" href="../static/css/glider.min.css">
+    <title>Descarga Anime Gratis - KawaiiOni</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgb(36, 48, 57) !important;">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html" style="background-color: red; color: white; padding-left: 7px; padding-right: 7px;">KawaiiOni</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown" style="margin-left: -15px;">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 10px; padding-right: 10px; background-color: rgb(34, 34, 34);">
+                            <i class='bx bxs-grid'></i> <span class="span-menu" style="font-size: 16px;">Menú</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(34, 34, 34); border-radius: 0;">
+                            <h6 style="color: white; padding-left: 15px; font-family: 'Raleway', sans-serif; font-weight: bold;">Mangas</h6>
+                            <a class="dropdown-item" href="#">Hentai <span class="badge badge-danger">+18</span></a>
+                            <a class="dropdown-item" href="#">Ecchi <span class="badge badge-danger">explicito</span></a>
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Romance</a>
+                            <a class="dropdown-item" href="#">Comedia</a>
+                            <a class="dropdown-item" href="#">Recuerdos de la vida</a>
+                            <a class="dropdown-item" href="#">Shojo <span class="badge badge-danger">chicas adolecentes</span></a>
+                            <a class="dropdown-item" href="#">Shonen <span class="badge badge-danger">chicos adolecentes</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class='bx bx-plus'></i> Ver catálogo de mangas</a>
+                            <div class="dropdown-divider"></div>
+                            <h6 style="color: white; padding-left: 15px; font-family: 'Raleway', sans-serif; font-weight: bold;">Animes</h6>
+                            <a class="dropdown-item" href="#">Ecchi <span class="badge badge-danger">explicito</span></a>
+                            <a class="dropdown-item" href="#">Acción</a>
+                            <a class="dropdown-item" href="#">Romance</a>
+                            <a class="dropdown-item" href="#">Comedia</a>
+                            <a class="dropdown-item" href="#">Recuerdos de la vida</a>
+                            <a class="dropdown-item" href="#">Shojo <span class="badge badge-danger">chicas adolecentes</span></a>
+                            <a class="dropdown-item" href="#">Shonen <span class="badge badge-danger">chicos adolecentes</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class='bx bx-plus'></i> Ver catálogo de animes</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="d-flex flex-row" style="justify-content: center; gap: 10px; padding-top: 6px !important;">
+                                <a href="#" class="socials"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="#" class="socials"><i class='bx bxl-youtube' ></i></a>
+                                <a href="#" class="socials"><i class='bx bxl-twitch' ></i></a>
+                                <a href="#" class="socials"><i class='bx bxl-twitter' ></i></a>
+                            </div>
+                            <p style="font-size: 13px; color: white; text-align: center;">Todos los derechos reservados. Copyright 2022.</p>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-search" type="submit" id="btn-search"
+                        style="border-radius: 0px; margin-left: -8px; background-color: transparent; color: white;"><i class='bx bx-search'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Volver arriba -->
+    <button class="btn" id="ir-arriba" style="background-color: red; color: white;
+        border-radius: 3px; padding: 10px 14px; font-size: 17px; 
+        display: none; z-index: 1000;
+        position: fixed; bottom: 35px; right: 35px;">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+    <!-- portada scrollY -->
+    <section class="section-banner-index2 fixed-top" id="filter">
+        <div class="banner">
+            <div class="container container-banner">
+                <div class="portada2" id="portada">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div id="cuenta"></div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="header">
+                                <a href="#" class="a-count">
+                                    <p class="mensaje">
+                                        <span class="badge badge-danger span-count" style="background-color: red; padding: 6px 10px;">Tate no Yuusha no Nariagari 2 capítulo 3</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Scroll Sticky (al ahcer scroll que un elemento quede fixed) -->
+    <script>
+        window.addEventListener("scroll", function(){
+            let bannerIndex = document.querySelector(".section-banner-index2");
+            bannerIndex.classList.toggle("sticky", window.scrollY > 0)
+        });
+    </script>
+    <section class="section-x-anime" style="background: linear-gradient(rgba(36, 48, 57, 0.9), rgba(36, 48, 57, 0.4)), url(https://hdwallpaperim.com/wp-content/uploads/2017/09/07/465037-anime-Kimi_no_Na_Wa.jpg);
+        background-size: cover; background-position: bottom center;">
+        <div class="especiales-ovas">
+            <div class="container container-banner">
+                <br>
+                <div class="row" style="justify-content: center;">
+                    <div class="col-lg-3 col-6 columnas-banner">
+                        <div class="card" style="box-shadow: 1px 0px 6px rgb(36, 36, 36);">
+                            <div class="img-card" style="background: url(https://i.pinimg.com/originals/47/2e/92/472e9277dae8a2750e32f493c0f08246.jpg);"></div>
+                            <p class="title-card" style="width: 100%; text-align: center;">Kimi no na mae wa</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-10 columnas-banner">
+                        <div class="row row-spans">
+                            <div class="d-flex flex-row">
+                                <span class="badge badge-danger mr-1" style="background-color: red;">Kimi no na wa</span>
+                                <span class="badge badge-danger mr-1" style="background-color: red;">Your name</span>
+                                <span class="badge badge-danger mr-1" style="background-color: red;">Tu nombre</span>
+                                <span class="badge badge-danger" style="background-color: red;">君の名は</span>
+                            </div>
+                        </div>
+                        <div class="row row-spans mt-1">
+                            <div class="d-flex flex-row">
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Drama</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Escolares</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Romance</span>
+                                <span class="badge badge-danger mr-1" style="background-color: dodgerblue;">Sobrenatural</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="content-x-anime">
+                            <h2 class="title-x-noticia" style="font-family: 'Raleway', sans-serif; color: #fff;">Kimi no na mae wa</h2>
+                            <hr style="background-color: rgb(150, 150, 150);">
+                            <h4 class="title-sinopsis-x-noticia" style="font-family: 'Raleway', sans-serif; color: #fff;">Sinopsis</h4>
+                            <div class="content-sinopsis" style="max-height: 100px; overflow-y: auto;">
+                                <p class="sinopsis-x-noticia" style="font-family: 'Raleway', sans-serif; color: #fff; font-size: 15px;">
+                                    La “historia de milagros y amor” gira en torno a Mitsuha y Taki. Mitsuha es una estudiante de secundaria que vive en un pueblo rural situado en las montañas.
+                                     Su padre es el alcalde y no pasa mucho por casa, ella vive con su hermana pequeña estudiante de primaria y su abuela. Mitsuha tiene una personalidad honesta,
+                                      pero a ella no le gustan las costumbres del santuario sintoísta de su familia, ni ella ni su padre participan en una campaña electoral. Ella se lamenta de 
+                                      que vive confinada en un pueblo rural y anhela el maravilloso estilo de vida de Tokio. Taki es un estudiante de secundaria que vive en el centro de Tokio. 
+                                      Él pasa su tiempo junto a sus amigos, trabajando a tiempo parcial en un restaurante italiano y está interesado en la arquitectura y las bellas artes. 
+                                      Un día, Mitsuha tiene un sueño en el que ella tiene el cuerpo de un hombre joven. Taki también tiene un sueño parecido y en el que él es una estudiante 
+                                      de secundaria en un pueblo en las montañas en él que nunca ha estado. ¿Cuál es el secreto de sus sueños?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-spans2 mt-4">
+                            <div class="d-flex flex-row">
+                                <span class="badge badge-danger mr-1" style="background-color: red; text-transform: uppercase;">finalizado</span>
+                                <span class="badge badge-danger mr-1" style="background-color: red;">Película</span>
+                                <span class="badge badge-danger mr-1" style="background-color: deepskyblue;"><i class='bx bx-cloud-snow'></i> Invierno</span>
+                                <span class="badge badge-danger mr-1" style="background-color: grey;"><i class='bx bxs-time' ></i> 26 Agosto, 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class="section-banner-index">
+        <div class="info-x-noticia">
+            <div class="container container-banner">
+                <br>
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <h4 style="font-family: 'Raleway', sans-serif; color: rgb(19, 0, 102); text-align: justify; font-weight: bold; text-decoration: underline;">
+                            LISTA DE CAPÍTULOS
+                        </h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="">
+                                    <div class="card-capitulo" style="background-color: white; border-radius: 7px; box-shadow: 1px 0px 6px rgb(189, 189, 189); transition: .3s ease-in-out;">
+                                        <div class="d-flex flex-row">
+                                            <img class="img-capitulo" src="https://i.pinimg.com/736x/b8/de/d8/b8ded8f1de6b530e0f4b1caf263f4d2a.jpg" alt="" style="border-radius: 7px 0 0 7px; width: 17%;">
+                                            <div class="info-capitulo" style="width: 100%;">
+                                                <h6 class="ml-2 mt-2" style="font-family: 'Raleway', sans-serif; font-weight: bold;">Kimi no na mae wa</h6>
+                                                <hr>
+                                                <p class="ml-2 date-capitulo" style="font-family: 'Raleway', sans-serif; margin-top: -5px; font-size: 13px;"><i class='bx bx-time-five' ></i> Hace 6 años</p>
+                                            </div>
+                                            <div class="btn-download">
+                                                <button class="btn btn-danger hint--left" data-hint="Descargar" style="width: 70px; height: 100%; 
+                                                font-size: 22px; border-radius: 0 7px 7px 0;">
+                                                    <i class='bx bxs-download' ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                    </div>
+                </div>
+                <div class="mas-que-ver">
+                    <div class="container-banner">
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-11 col-12 order-sm-2">
+                                <h4 class="title" style="text-decoration: underline;">ANIMES QUE TE PUEDEN INTERESAR</h4>
+                            </div>
+                            <div class="col-lg-1 col-12 order-sm-1">
+                                <a href="#" class="more-btn"><i class='bx bx-plus i-more-btn' ></i> <span class="span-more-btn">+ Ver catálogo completo</span></a>
+                            </div>
+                        </div>
+                        <div class="slider-btns">              
+                            <button aria-label="Previous" class="glider-prev"><i class='bx bxs-left-arrow i-carousel' ></i></button>
+                            <button aria-label="Next" class="glider-next"><i class='bx bxs-right-arrow i-carousel' ></i></button>
+                        </div>
+                        <div class="glider-contain">
+                            <div class="glider">
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://www.srgeekarg.com/wp-content/uploads/2019/04/MV5BMDc0OTMyM2MtOWYzNy00OGQ2LTkxYjEtMWU3MTY1NTEzOTMxXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg);"></div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">Kimi no Suizou wo Tabetai</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://m.media-amazon.com/images/I/910YgP2-gFL._SL1500_.jpg);">
+                                                <span class="badge badge-danger span-glider" style="float: right; margin-top: -8px; margin-right: 2px; background-color: red;">contenido explicito</span>
+                                            </div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">High School DxD Born</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://ramenparados.com/wp-content/uploads/2019/10/The-Irregular-at-Magic-High-School-1-esp.jpg);"></div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">Mahouka Koukou no Rettousei</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://p4.wallpaperbetter.com/wallpaper/469/474/527/chainsaw-man-anime-girls-power-character-hd-wallpaper-preview.jpg);">
+                                                <span class="badge badge-danger span-glider" style="float: right; margin-top: -8px; margin-right: 2px; background-color: dodgerblue;">próximamente</span>
+                                            </div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">Chainsaw man</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://ramenparados.com/wp-content/uploads/2022/02/THE-RISING-OF-THE-SHIELD-HERO-S2-vertical-300x451.jpg);">
+                                                <span class="badge badge-danger span-glider" style="float: right; margin-top: -8px; margin-right: 2px; background-color: rgb(0, 159, 0);">emitiéndose</span>
+                                            </div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">Tate no Yuusha no Nariagari 2</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://picfiles.alphacoders.com/372/thumb-372102.jpg);"></div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">Oreshura</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://tioanime.com/uploads/portadas/3653.jpg);">
+                                                <span class="badge badge-danger span-glider" style="float: right; margin-top: -8px; margin-right: 2px; background-color: rgb(0, 159, 0);">emitiéndose</span>
+                                            </div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">Kawaii dake ja Nai Shikimori-san</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-box">
+                                    <a href="#">
+                                        <div class="card">
+                                            <div class="img-card" style="background: url(https://picfiles.alphacoders.com/483/thumb-483995.jpg);">
+                                                <span class="badge badge-danger span-glider" style="float: right; margin-top: -8px; margin-right: 2px; background-color: rgb(0, 159, 0);">emitiéndose</span>
+                                            </div>
+                                            <p class="title-card" style="width: 100%; text-align: center;">Spy x Family</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div role="tablist" class="dots"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4 class="title" style="font-family: 'Raleway', sans-serif; font-weight: bold; margin-top: 20px; text-decoration: underline;"><i class='bx bxs-comment-detail'></i> COMENTARIOS</h4>
+                <!-- Disqus -->
+                <div class="row">
+                    <div class="col-lg-12 col-12 columnas-banner">
+                        <div class="animes_nuevos_contenedor" style="padding: 2px;">
+                            <div class="bg-light" style="border-radius: 0px 0px 10px 10px; box-shadow: 1px 0px 15px rgb(189, 189, 189);">
+                                <div class="m-4 py-2" id="disqus_thread"></div>
+                                <div class="m-4 py-2" id="disqus_thread"></div>
+                            </div>
+
+                            <div id="disqus_thread"></div>
+                            <script>
+                                /**
+                                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                                /*
+                                var disqus_config = function () {
+                                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                };
+                                */
+                                (function() { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://kawaiioni.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the 
+                                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                            </noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container text-center">
+                <span class="badge badge-danger" style="background-color: red; font-size: 15px; padding: 5px 15px;">KAWAIIONI</span>
+                <div class="d-flex flex-row" style="justify-content: center;">
+                    <a href="https://www.instagram.com/" class="btn-red-social hint--bottom hint--error" data-hint="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.youtube.com/" class="btn-red-social hint--bottom hint--error" data-hint="YouTube"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.twitch.com/" class="btn-red-social hint--bottom hint--error" data-hint="Twitch"><i class='bx bxl-twitch' ></i></a>
+                    <a href="https://www.twitter.com/" class="btn-red-social hint--bottom hint--error" data-hint="Twitter"><i class='bx bxl-twitter' ></i></a>
+                </div>
+                <p style="font-size: 13px; color: rgb(195, 195, 195); text-align: center;">Todos los derechos reservados. Copyright 2022.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../static/js/lightslider.js"></script>
+    <script src="../static/js/simplyCountdown.min.js"></script>
+    <script src="../static/js/countdown.js"></script>
+    <script src="../static/js/glider.min.js"></script>
+
+    <!-- init AOS Animations -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- carousel responsive 2 -->
+    <script>
+        new Glider(document.querySelector('.glider'), {
+        slidesToScroll: 2,
+        slidesToShow: 4.3,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        },
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                duration: 3
+            }
+            },{
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                duration: 3
+                }
+            },
+            {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                duration: 3
+                }
+            },{
+            breakpoint: 304,
+            settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1,
+                duration: 3
+                }
+            }
+        ]
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 600);
+            });
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 0){
+                    $('#ir-arriba').slideDown();
+                }else{
+                    $('#ir-arriba').slideUp();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
